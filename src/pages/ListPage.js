@@ -3,7 +3,7 @@ import "../App.css";
 import Provinces from "../components/Provinces";
 
 function ListPage({ type }) {
-      // Define a state variable to hold the fetched data
+  // Define a state variable to hold the fetched data
   const [data, setData] = useState(null);
 
   // Define a state variable to track loading state
@@ -46,7 +46,7 @@ function ListPage({ type }) {
 
   return (
     <div className="App">
-      { type=== 'provinces' ? 'Provinces' : 'Territories' }
+      {type === "provinces" ? "Provinces" : "Territories"}
       <Provinces data={data} error={error} loading={loading} />
     </div>
   );

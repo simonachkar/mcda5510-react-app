@@ -8,7 +8,7 @@ const Provinces = ({ loading, error, data }) => {
       ) : error ? (
         <p>Error: {error.message}</p>
       ) : (
-        data &&  data.map((province) => {
+        data.map((province) => {
           return (
             <Province
               key={province.name}
